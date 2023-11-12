@@ -63,8 +63,7 @@ const CryptoDetails = () => {
       >
         {time.map((date) => <Option key={date}>{date}</Option>)}
       </Select>
-      <LineChart coinHistory={coinHistory} currentPrice={millify(cryptoDetails.price)} coinName={cryptoDetails.name} />
-
+      <LineChart coinHistory={coinHistory} currentPrice={millify(cryptoDetails?.price)} coinName={cryptoDetails?.name} />
       <Col className="stats-container">
         <Col className="coin-value-statistics">
           <Col className="coin-value-statistics-heading">
@@ -72,7 +71,7 @@ const CryptoDetails = () => {
               {data?.data?.coin.name} Value Statistics
             </Title>
             <p>
-              An overview showing the stats of {data?.data?.coin.name}
+              An overview showing the statistics of {data?.data?.coin.name}, such as the base and quote currency, the rank, and trading volume.
             </p>
           </Col>
           {stats.map(({ icon, title, value }) => (
@@ -105,7 +104,7 @@ const CryptoDetails = () => {
     <Col className="coin-desc-link">
      <Row className="coin-desc">
        <Title level={3} className="coin-details-heading">What is {data?.data?.coin?.name}?</Title>
-       {cryptoDetails.description}
+       {HTMLReactParser(cryptoDetails?.description)}
      </Row>
      <Col className="coin-links">
        <Title level={3} className="coin-details-heading">{data?.data?.coin?.name} Links</Title>
