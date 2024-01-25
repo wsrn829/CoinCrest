@@ -46,12 +46,9 @@ const Navbar = () => {
             <Menu.Item key="cryptocurrencies" icon={<FundOutlined /> }>
                 <Link to="/cryptocurrencies">Cryptocurrencies</Link>
             </Menu.Item>
-            <Menu.Item key="exchanges" icon={<MoneyCollectOutlined /> }>
-                <Link to="/exchanges">Exchanges</Link>
-            </Menu.Item>
-            <Menu.Item key="news" icon={<BulbOutlined /> }>
+            {/* <Menu.Item key="news" icon={<BulbOutlined /> }>
                 <Link to="/news">News</Link>
-            </Menu.Item>
+            </Menu.Item> */}
         </Menu>
         )}
     </div>
