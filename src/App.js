@@ -33,14 +33,15 @@ const App = () => (
         </div>
       </Layout>
       <div className="footer">
-        <Typography.Title level={5} style={{ color: 'white', textAlign: 'center' }}>Copyright © 2021
+        <Typography.Title level={5} style={{ color: 'white', textAlign: 'center' }}>Copyright © 2024
           <Link to="/">
-            Cryptoverse Inc.
+            CoinCrest Inc.
           </Link> <br />
           All Rights Reserved.
         </Typography.Title>
         <Space>
           <Link to="/">Home</Link>
+          <Link to="/cryptocurrencies">Cryptocurrencies</Link>
           <Link to="/exchanges">Exchanges</Link>
           <Link to="/news">News</Link>
         </Space>
