@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 // import Loader from './Loader';
 
 import { useGetCryptosQuery } from '../services/cryptoApi';
-import Cryptocurrencies from '../components';
+import { Cryptocurrencies } from '../components';
 
 const { Title } = Typography;
 
@@ -21,11 +21,11 @@ const Homepage = () => {
     <>
         <Title level={2} className="heading">Global Crypto Stats</Title>
         <Row gutter={[32, 32]}>
-            <Col span={12}><Statistic title="total Cryptocurrencies" value={globalStats.total} /></Col>
-            <Col span={12}><Statistic title="total Exchanges" value={millify(globalStats.totalExchanges)} /></Col>
-            <Col span={12}><Statistic title="total Market Cap" value={millify(globalStats.totalMarketCap)} /></Col>
-            <Col span={12}><Statistic title="total 24h Volume" value={millify(globalStats.total24hVolume)} /></Col>
-            <Col span={12}><Statistic title="total Markets" value={millify(globalStats.totalMarkets)} /></Col>
+            <Col span={12}><Statistic title="total Cryptocurrencies" value={globalStats?.total} /></Col>
+            <Col span={12}><Statistic title="total Exchanges" value={globalStats ? millify(globalStats.totalExchanges) : 0} /></Col>
+            <Col span={12}><Statistic title="total Market Cap" value={globalStats ? millify(globalStats.totalMarketCap) : 0} /></Col>
+            <Col span={12}><Statistic title="total 24h Volume" value={globalStats ? millify(globalStats.total24hVolume) : 0} /></Col>
+            <Col span={12}><Statistic title="total Markets" value={globalStats ? millify(globalStats.totalMarkets) : 0} /></Col>
         </Row>
         <div className="home-heading-container">
             <Title level={2} className="home-title">Top 10 Cryptocurrencies In The World</Title>
