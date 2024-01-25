@@ -2,7 +2,7 @@ import React from 'react';
 import millify from 'millify';
 import { Typography, Row, Col, Statistic } from 'antd';
 import { Link } from 'react-router-dom';
-// import Loader from './Loader';
+import Loader from './Loader';
 
 import { useGetCryptosQuery } from '../services/cryptoApi';
 import { Cryptocurrencies } from '../components';
