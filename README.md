@@ -1,6 +1,9 @@
-## CoinCrest
+# CoinCrest
 --------------------
 ### Full-stack cryptocurrency application for seamless navigation through the dynamic world of digital assets
+
+Project Deployment: https://coin-crest.netlify.app/
+
 --------------------
 * Implemented a Single-Page Application (SPA) using React, React Hooks, Ant Design, Chart.js, and CSS to
 optimize the user experience with seamless navigation and dynamic content loading
